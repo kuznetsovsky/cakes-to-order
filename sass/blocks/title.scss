@@ -1,0 +1,134 @@
+.title {
+    order: 1;
+    margin: 0;
+    text-align: center;
+
+    font-family: "Playfair Display", "Arial", "Helvetica", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 36px;
+    letter-spacing: .075em;
+    color: #2d2829;
+}
+
+.header__title {
+    padding: 0 40px;
+    margin-bottom: 10px;
+}
+
+.title_size_h2 {
+    font-size: 24px;
+    line-height: 1.2em;
+}
+
+.title_color_white {
+    color: #fff;
+}
+
+.our-cakes__title {
+    margin-bottom: 30px;
+}
+
+.ind-order__title {
+    margin-bottom: 7px;
+}
+
+.review__title {
+    margin-bottom: 17px;
+}
+
+.about-us__title {
+    margin-bottom: 20px;
+}
+
+.advantages__title {
+    margin-bottom: 5px;
+}
+
+.info-order__title {
+    margin-bottom: 30px;
+}
+
+.contact__title {
+    margin-bottom: 7px;
+}
+
+@media (min-width: 768px) {
+    .title {
+        max-width: 282px;
+        text-align: left;
+        font-size: 60px;
+        line-height: 55px;
+    }
+    .header__title {
+        padding: 0;
+    }
+    .title_size_h2 {
+        font-size: 28px;
+        line-height: 1.2em;
+    }
+    .our-cakes__title {
+        margin-bottom: 35px;
+    }
+    .ind-order__title {
+        text-align: center;
+        max-width: none;
+    }
+    .review__title {
+        margin-bottom: 23px;
+        text-align: center;
+        max-width: none;
+    }
+    .advantages__title {
+        margin-bottom: 7px;
+        max-width: none;
+        text-align: center;
+    }
+    .info-order__title {
+        max-width: none;
+    }
+    .contact__title {
+        margin-left: 28px;
+    }
+}
+
+@media (min-width: 1366px) {
+    .title {
+        max-width: 370px;
+        font-size: 79px;
+        line-height: 70px;
+    }
+    .header__title {
+        margin-bottom: 20px;
+    }
+    .our-cakes__title {
+        margin-bottom: 60px;
+    }
+    .title_size_h2 {
+        font-size: 40px;
+        line-height: 1.2em;
+    }
+    .ind-order__title {
+        max-width: none;
+    }
+    .review__title {
+        margin-bottom: 52px;
+        max-width: none;
+    }
+    .advantages__title {
+        margin-bottom: 24px;
+    }
+    .advantages__title {
+        margin-bottom: 24px;
+        max-width: none;
+        text-align: center;
+    }
+    .info-order__title {
+        margin-bottom: 38px;
+        max-width: none;
+    }
+    .contact__title {
+        margin-left: 0px;
+    }
+}

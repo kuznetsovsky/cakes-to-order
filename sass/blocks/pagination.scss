@@ -1,0 +1,40 @@
+.owl-dots {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.owl-dot {
+    margin: 0 2px;
+    background-color: #ddd !important;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+}
+
+.owl-dot.active {
+    background-color: #f50049 !important;
+    width: 8px;
+    height: 8px;
+}
+
+.review__list .owl-dots {
+    padding-top: 10px;
+}
+
+// mixs
+
+.ind-order-filling__pagination {
+    padding: 10px 0 20px;
+}
+
+@media (min-width: 768px) {
+    .pagination {
+        display: none;
+    }
+}

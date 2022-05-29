@@ -1,0 +1,110 @@
+.order-form {
+    padding: 15px 0;
+}
+
+.order-form__fieldset {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.order-form__legend {
+    margin-bottom: 10px;
+
+    font-family: "Playfair Display", "Arial", "Helvetica", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 18px;
+    letter-spacing: .01em;
+    color: #2d2829;
+}
+
+.order-form__list {
+    @include list-reset();
+    margin-bottom: 35px;
+}
+
+.order-form__item {
+    margin-bottom: 10px;
+}
+
+.order-form__label {
+    display: block;
+    text-align: center;
+
+    font-family: "Intro Script R H2 Base", "Arial", "Helvetica", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 30px;
+    letter-spacing: 0;
+    color: #f50049;
+}
+
+.order-form__select::-ms-expand {
+    display: none;
+}
+
+.order-form__select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: none;
+    padding: 0;
+    border: none;
+
+    width: 100%;
+    max-width: 242px;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid #e0e0e0;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+    .order-form__wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .order-form__list {
+        width: 440px;
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .order-form__label {
+        text-align: left;
+        font-size: 18px;
+    }
+    .order-form__select {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 1366px) {
+    .order-form__legend {
+        margin-bottom: 20px;
+        font-size: 27px;
+        line-height: 1.2em;
+    }
+    .order-form__list {
+        width: 790px;
+    }
+    .order-form__label {
+        font-size: 27px;
+        margin-bottom: 18px;
+    }
+    .order-form__select {
+        font-size: 18px;
+        max-width: 242px;
+        border-radius: 0;
+        border: none;
+        border-bottom: 1px solid #c1b0af;
+        padding: 0 15px;
+    }
+}

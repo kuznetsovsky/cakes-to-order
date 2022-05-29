@@ -1,0 +1,85 @@
+
+.subtitle {
+    order: 2;
+    display: block;
+    text-align: center;
+
+    font-family: "Intro Script R H2 Base", "Arial", "Helvetica", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.2em;
+    letter-spacing: 0;
+    color: #32313d;
+}
+
+.subtitle_align_left {
+    text-align: left;
+}
+
+.header__subtitle {
+    margin-bottom: 25px;
+}
+
+.ind-order__subtitle {
+    margin-bottom: 20px;
+}
+
+.advantages__subtitle {
+    margin-bottom: 15px;
+}
+
+.contact__subtitle {
+    margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+    .subtitle {
+        max-width: 282px;
+        text-align: left;
+        font-size: 36px;
+    }
+    .header__subtitle {
+        margin-bottom: 55px;
+    }
+    .ind-order__subtitle {
+        max-width: none;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .advantages__subtitle {
+        margin-bottom: 0;
+        max-width: none;
+        text-align: center;
+        font-size: 26px;
+    }
+    .contact__subtitle {
+        margin-left: 28px;
+        margin-bottom: 20px;
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 1366px) {
+    .subtitle {
+        max-width: 370px;
+        font-size: 41px;
+    }
+    .header__subtitle {
+        margin-bottom: 60px;
+    }
+    .ind-order__subtitle {
+        max-width: none;
+    }
+    .advantages__subtitle {
+        max-width: none;
+        text-align: center;
+        font-size: 35px;
+    }
+    .contact__subtitle {
+        margin-left: 0;
+        margin-bottom: 20px;
+        font-size: 35px;
+    }
+}
+

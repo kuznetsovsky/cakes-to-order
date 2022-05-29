@@ -1,0 +1,264 @@
+.navigation__section-desktop {
+    display: none;
+}
+
+.navigation__section-desktop__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 70px 0 0;
+}
+
+.navigation__logo-desktop {
+    width: 67px;
+    height: 18px;
+    background-image: url("../img/logo_cakes_large.png");
+    background-repeat: no-repeat;
+    margin-top: -3px;
+}
+
+.navigation__section-top-hat {
+    background-color: #fff;
+    height: 40px;
+}
+
+.navigation__logo-mobile {
+    position: relative;
+    top: 13px;
+    left: 20px;
+    width: 47px;
+    height: 13px;
+    background-image: url("../img/logo_cakes_small.png");
+    background-repeat: no-repeat;
+}
+
+.navigation__block-button {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    right: 20px;
+}
+
+.navigation__button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+}
+
+.no-js .navigation__button {
+    display: none;
+}
+
+.navigation__button__burger {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 18px;
+    height: 2px;
+    background-color: #000;
+    margin-top: -1px;
+    margin-left: -9px;
+}
+
+.burger-first,
+.burger-last {
+    transition: transform 0.3s ease,
+                margin-top 0.3s 0.3s ease;
+}
+
+.burger-first {
+    margin-top: -7px;
+}
+
+.burger-last {
+    margin-top: 5px;
+}
+
+.navigation.show .burger-center {
+    display: none;
+}
+
+.navigation.show .burger-first,
+.navigation.show .burger-last  {
+    margin-top: 0;
+    transition: margin-top 0.3s ease,
+                transform 0.3s 0.3s ease;
+}
+
+.navigation.show .burger-first {
+    margin-top: 0;
+    transform: rotate(-45deg);
+}
+
+.navigation.show .burger-last  {
+    margin-top: 0;
+    transform: rotate(45deg);
+}
+
+.navigation__block-phone-number {
+    position: absolute;
+    top: 0;
+    right: 46px;
+    display: none;
+}
+
+.navigation__phone-number {
+    text-decoration: none;
+    position: relative;
+    top: 22px;
+
+    font-family: "Circe", "Arial", "Helvetica", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.2em;
+    letter-spacing: 0;
+    color: #2d2829;
+}
+
+.navigation__section-menu {
+    background-color: #e7e7e7;
+    display: none;
+}
+
+.navigation.show .navigation__section-menu {
+    display: block;
+}
+
+.no-js .navigation__section-menu {
+    display: block;
+}
+
+.navigation__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation__list {
+    width: 320px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #e7e7e7;
+    z-index: 99;
+}
+
+.no-js .navigation__list {
+    width: auto;
+    position: relative;
+}
+
+.navigation__items {
+    border-bottom: 1px solid rgba(0, 0, 0, .05);
+}
+
+.navigation__links {
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "Circe", "Arial", "Helvetica", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.2em;
+    color: #383838;
+}
+
+.navigation__links:focus,
+.navigation__links:hover {
+    color: #f50049;
+}
+
+@media (min-width: 768px) {
+    .navigation__section-top-hat {
+        height: 60px;
+    }
+    .navigation__logo-mobile {
+        top: 20px;
+        left: 28px;
+        width: 58px;
+        height: 17px;
+        background-image: url("../img/logo_cakes_medium.png");
+    }
+    .navigation__block-button {
+        width: 60px;
+        height: 60px;
+        left: 123px;
+        right: 0;
+    }
+    .navigation__button {
+        width: 60px;
+        height: 60px;
+    }
+    .navigation__button__burger {
+        width: 26px;
+        margin-left: -13px;
+    }
+    .burger-first {
+        margin-top: -9px;
+    }
+    .burger-last {
+        margin-top: 7px;
+    }
+    .navigation__block-phone-number {
+        display: block;
+    }
+}
+
+@media (min-width: 1366px) {
+    .navigation__list {
+        width: auto;
+        position: static;
+        background-color: transparent;
+    }
+    .navigation__section-desktop {
+        display: block;
+    }
+    .navigation__section-mobile {
+        display: none;
+    }
+    .navigation__logo-desktop {
+        display: block;
+    }
+    .navigation__list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .navigation__items {
+        border-bottom: none;
+        margin-right: 44px;
+        margin-bottom: 22px;
+    }
+    .navigation__items:last-child {
+        margin-right: 0;
+    }
+    .navigation__phone-number {
+        position: static;
+    }
+    .navigation__links {
+        padding: 0;
+        text-align: left;
+        font-size: 13px;
+    }
+    .navigation__logo-desktop-wrapper {
+        width: 80px;
+        margin-right: 30px;
+    }
+    .navigation__block-phone-number {
+        width: 345px;
+        position: static;
+        text-align: right;
+    }
+}

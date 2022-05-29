@@ -1,0 +1,21 @@
+
+.section-content {
+    width: 280px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    .section-content {
+        width: 728px;
+    }
+}
+
+
+@media (min-width: 1366px) {
+    .section-content {
+        width: 1220px;
+        padding: 0 74px;
+    }
+}
